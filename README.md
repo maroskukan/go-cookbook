@@ -2,6 +2,9 @@
 
 Notes and code examples from learning Go language.
 
+[Introduction](#introduction)
+[Installation](#installation)
+[Compilation](#compilation)
 
 ## Introduction
 
@@ -47,12 +50,20 @@ Go was created to address the following challenges:
   - **Standard Library** - string manipulation, data compression, file manipulation, network APIs, testing APIs
   - **Go CLI** - project initialization, build, code generation, retrieve dependencies, test, profiling, documentation, report language bugs
 - Cross-platform
-  - GOOS = windows, GOARCH=amd64
-  - GOOS = darwin, GOARCH=amd64
-  - GOOS = android GOARCH=arm
+  - GOOS=windows, GOARCH=amd64
+  - GOOS=darwin, GOARCH=amd64
+  - GOOS=android GOARCH=arm
 - Backward compatibility
   - It is intended that programs written to the Go1 specification will continue to compile and run correctly, unchanged, over the lifetime of that specification
   - There are however exceptions related to security, unspecified behavior, specification errors, bugs
+
+### Use cases
+
+- Web services (backend)
+- Web applications (frontend)
+- DevOps (Docker, K8s)
+- GUI / Thick-client 
+- Machine learning
 
 
 ## Installation
@@ -78,7 +89,7 @@ Go was created to address the following challenges:
    go version
    ```
 
-## Building the program
+## Compilation
 
 Once the code is written in golang, you need to use **go** tool with the **build** command to produce a binary file which you can execute. You can also build and run at the same time using **run** command.
 
