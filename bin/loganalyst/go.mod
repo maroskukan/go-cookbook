@@ -1,3 +1,3 @@
-module github.com/maroskukan/go-world
+module github.com/maroskukan/loganalyst
 
 go 1.15
