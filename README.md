@@ -68,6 +68,8 @@ Go was created to address the following challenges:
 
 ## Installation
 
+Use the following procedure to install Go tools on your platform. (Linux example)
+
 1. Download latest binary installation e.g. 1.15.6
    ```bash
    wget https://golang.org/dl/go1.15.6.linux-amd64.tar.gz
@@ -88,6 +90,9 @@ Go was created to address the following challenges:
    ```bash
    go version
    ```
+## Upgrade
+
+Section will be updated once new release is available to download.
 
 ## Compilation
 
