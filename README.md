@@ -2,9 +2,9 @@
 
 Notes and code examples from learning Go language.
 
-[Introduction](#introduction)
-[Installation](#installation)
-[Compilation](#compilation)
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Compilation](#compilation)
 
 ## Introduction
 
@@ -90,6 +90,9 @@ Use the following procedure to install Go tools on your platform. (Linux example
    ```bash
    go version
    ```
+6. Optionally change the default GOPATH variable
+   GOPATH=/usr/local/go/bin
+
 ## Upgrade
 
 Section will be updated once new release is available to download.
