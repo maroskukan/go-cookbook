@@ -2,6 +2,7 @@
 
 Notes and code examples from learning Go language.
 
+
 ## Introduction
 
 Go was created to address the following challenges:
@@ -25,10 +26,33 @@ Go was created to address the following challenges:
 ### Language Values
 
 - Simplicity
+  ```go
+  // Increment and decrements are statements on Go
+  i := 1
+  i++
+  println(i) // 2
+  i++
+  println(i) // 3
+  // All loops in Go are for-loops
+  for i :=0; i < 5; i++ ... // loop with incrementor
+  for i < 5 ... // loop till condition
+  for ... // infinite loop
+  for user := range users ... // loop over collection
+  ```
 - Network aware and concurent apps
+  - **net and net/http packages** - Create web servers using only standard library
+  - **goroutines** - Start thousand of concurent tasks with minimal resources
+  - **channels** - Safely communicate between concurent tasks
 - Out of the box experience
+  - **Standard Library** - string manipulation, data compression, file manipulation, network APIs, testing APIs
+  - **Go CLI** - project initialization, build, code generation, retrieve dependencies, test, profiling, documentation, report language bugs
 - Cross-platform
+  - GOOS = windows, GOARCH=amd64
+  - GOOS = darwin, GOARCH=amd64
+  - GOOS = android GOARCH=arm
 - Backward compatibility
+  - It is intended that programs written to the Go1 specification will continue to compile and run correctly, unchanged, over the lifetime of that specification
+  - There are however exceptions related to security, unspecified behavior, specification errors, bugs
 
 
 ## Installation
