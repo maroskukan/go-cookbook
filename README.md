@@ -24,6 +24,7 @@ Go was created to address the following challenges:
 - Garbage collection
 - Fully compiled
 - Rapid compilation
+- Concurent by default
 - Single binary output
 
 ### Language Values
@@ -57,11 +58,15 @@ Go was created to address the following challenges:
   - It is intended that programs written to the Go1 specification will continue to compile and run correctly, unchanged, over the lifetime of that specification
   - There are however exceptions related to security, unspecified behavior, specification errors, bugs
 
-### Use cases
+### Primary Use Cases
 
 - Web services (backend)
 - Web applications (frontend)
-- DevOps (Docker, K8s)
+
+### Secondary Use Cases
+
+- Task automation - secondary UC
+- DevOps (Docker, K8s) - se
 - GUI / Thick-client 
 - Machine learning
 
