@@ -83,7 +83,6 @@ export CHECKSUM=231654bbf2dab3d86c1619ce799e77b03d96f9b50770297c8f4dff8836fc8ca2
 # Download the archive
 wget https://golang.org/dl/go$VERSION.linux-amd64.tar.gz
 
-
 # Verify checksum
 echo "$CHECKSUM go$VERSION.linux-amd64.tar.gz" | sha256sum --check --status
 
