@@ -75,28 +75,36 @@ Go was created to address the following challenges:
 
 Use the following procedure to install Go tools on your platform. (Linux example)
 
-1. Download latest binary installation e.g. 1.15.6
-   ```bash
-   wget https://golang.org/dl/go1.15.6.linux-amd64.tar.gz
-   ```
-2. Extract the archive.
-   ```bash
-   sudo tar -C /usr/local -xzf go1.15.6.linux-amd64.tar.gz
-   ```
-3. Add /usr/local/go/bin to the PATH evironment variable.
-   ```bash
-   echo "PATH=$PATH:/usr/local/go/bin >> $HOME/.profile
-   ```
-4. Apply changes to variable.
-   ```bash
-   source $HOME/.profile
-   ```
-5. Verify go installation
-   ```bash
-   go version
-   ```
-6. Optionally change the default GOPATH variable
-   GOPATH=/usr/local/go/bin
+```bash
+# Set the desired Go version
+export VERSION=1.17.6
+export CHECKSUM=231654bbf2dab3d86c1619ce799e77b03d96f9b50770297c8f4dff8836fc8ca2
+
+# Download the archive
+wget https://golang.org/dl/go$VERSION.linux-amd64.tar.gz
+
+
+# Verify checksum
+echo "$CHECKSUM go$VERSION.linux-amd64.tar.gz" | sha256sum --check --status
+
+# Extract the archive.
+sudo tar -C /usr/local -xzf go$VERSION.linux-amd64.tar.gz
+
+# Add /usr/local/go/bin to the PATH evironment variable.
+echo PATH=\$PATH:/usr/local/go/bin >> $HOME/.profile
+
+# Apply changes to variable.
+source $HOME/.profile
+
+# Verify go installation
+go version
+
+# Optionally change the default GOPATH variable
+export GOPATH=/usr/local/go/bin
+
+# Cleanup
+rm -rf go$VERSION.linux-amd64.tar.gz
+```
 
 ## Upgrade
 
